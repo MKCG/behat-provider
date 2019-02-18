@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  behat-provider:
+    image: "composer"
+    volumes:
+      - .:/app
+      - /app/vendor
+    command: >
+      bash -c "composer install
+      && vendor/bin/behat
+      && while true ; do sleep 1 ; done"

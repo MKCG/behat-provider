@@ -6,12 +6,15 @@
         }
     ],
     "description": "Behat provider to inject feature examples",
+    "license": "GPL-3.0-or-later",
+    "keywords": ["bdd", "behat"],
     "autoload": {
         "psr-4": {
             "MKCG\\Behat\\Provider\\": "src"
         }
     },
     "require": {
+        "php": "^7.1",
         "behat/behat": "^3.5",
         "fzaninotto/faker": "^1.8"
     }
